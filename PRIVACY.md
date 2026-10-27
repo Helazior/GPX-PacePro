@@ -1,6 +1,6 @@
 # Politique de confidentialité — GPX Pacer
 
-*Dernière mise à jour : 29 août 2026 · Applicable à l'application Android
+*Dernière mise à jour : 24 octobre 2026 · Applicable à l'application Android
 `com.helazior.gpxpacer` et au champ de données Connect IQ « GPX Pacer ».*
 
 ## En une phrase
@@ -23,7 +23,15 @@ Strava (voir plus bas).
 | GPX exporté (optionnel) | Généré par l'app à ta demande (« exporter ») | À l'emplacement que **tu** choisis dans le sélecteur du système |
 | Jetons de connexion Strava (optionnel) | Délivrés par Strava après **ton** consentement | `SharedPreferences` privées ; effacés par « Déconnecter Strava » ou la désinstallation |
 
-Rien de tout cela ne quitte tes appareils, hors l'échange avec Strava décrit ci-dessous.
+Rien de tout cela ne quitte tes appareils, hors l'échange avec Strava décrit ci-dessous
+et la sauvegarde Android ci-après.
+
+**Sauvegarde Android.** Si la sauvegarde automatique est activée sur ton téléphone
+(réglage système, lié à ton compte Google), Android inclut les données de l'app —
+plans, réglages, profil de coureur, rapports de course — dans *ta* sauvegarde, comme
+pour toute application. Cette sauvegarde est gérée par Google, chiffrée, et nous n'y
+avons pas accès. Les jetons Strava en sont **exclus** : ils ne quittent jamais
+l'appareil, et une connexion Strava est à refaire sur un nouveau téléphone.
 
 ## Permissions
 
@@ -101,7 +109,7 @@ Clément Gindrier — clementgindrier@gmail.com
 
 # Privacy Policy — GPX Pacer (English)
 
-*Last updated: 29 August 2026*
+*Last updated: 24 October 2026*
 
 **GPX Pacer collects, transmits and stores no personal data.** There is no
 GPX Pacer account, no server, no analytics, no advertising and no tracking. The only
@@ -111,7 +119,12 @@ GPX files you pick are read in memory. Pacing plans, checkpoints and settings ar
 kept in the app's private storage. The compressed track is sent to *your* watch over
 Bluetooth via Garmin Connect Mobile, and the watch sends a race report back to your
 phone. GPS position and heart rate stay on the watch, for the duration of the
-activity. Nothing leaves your devices.
+activity. Nothing leaves your devices — except through Android's own backup: if
+automatic backup is enabled on your phone (a system setting tied to your Google
+account), Android includes the app's data (plans, settings, runner profile, race
+reports) in *your* backup, as for any app; Google manages and encrypts it and we have
+no access to it. Strava tokens are excluded from that backup and never leave the
+device.
 
 **The Android app declares a single permission, `INTERNET`**, used only for the
 optional Strava import: share a route or one of your own activities from the Strava app
