@@ -39,6 +39,28 @@ Sur les visuels EN, les écrans d'application restent donc en français.
 - Les chiffres sont ceux des captures (course du 10/10/2026 ; démo du cadran : avance
   4:12, fin estimée 5:42:07).
 
+## Série « Google » (`google/`)
+
+Seconde série, dans l'esprit des fiches des applications Google : page ambre pâle, titre
+Archivo, sous-titre Roboto, la capture dans un cadre de téléphone fin qui sort par le bas,
+et selon l'écran une carte de l'interface agrandie (profil par pente, barres du bilan, courbe
+allure / pente) ou la montre qui chevauche le téléphone. La crête du vrai profil de `gta.gpx`
+reste en fond. Générée par `src/build_google.mjs` (mêmes captures, mêmes contraintes) :
+
+| Dossier | Contenu | Format |
+|---|---|---|
+| `google/play/fr/`, `google/play/en/` | 7 captures téléphone | 1080 × 1920, PNG RGB |
+| `google/play/feature_1024x500_{fr,en}.png` | Image de présentation Play | 1024 × 500 |
+| `google/connectiq/hero_1440x720_{fr,en}.png` | Bandeau Connect IQ | 1440 × 720 |
+| `google/apercu_{fr,en}.png` | Planches de relecture | — |
+
+Polices : voir `src/assets/fonts/FONTS.md` (Archivo et IBM Plex Mono s'ajoutent à Roboto).
+
+```sh
+node store/src/build_google.mjs        # tout
+node store/src/build_google.mjs fr     # filtre sur le nom de sortie
+```
+
 ## Regénérer
 
 ```sh
